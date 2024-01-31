@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    top: 0; right: 0;
+    bottom: 1; left: 1;
+    position: absolute;
+
+    width: 100vw;
+    height: 15vh;
+    padding: 1rem 1rem;
+
+    font-family: "Jacques Francois";
+    font-size: 14pt;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo {
+    padding: 0;
+    width: max-content;
+    height: 100%;
+}
+
+.logo img {
+    width: 15vw;
+    height: 15vh;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+    width: 80%;
+    height: 100%;
+}
+
+.link {
+    padding: 1rem;
+    margin: 1rem;
+    background:
+        linear-gradient(to right,
+            rgb(110, 24, 195),
+            rgb(110, 24, 195)),
+        linear-gradient(to right,
+            rgb(19, 17, 123),
+            rgb(19, 17, 123));
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.link:hover {
+    background-size: 0 3px, 100% 3px;
+}
