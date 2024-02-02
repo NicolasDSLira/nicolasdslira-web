@@ -149,7 +149,7 @@
         margin-top: 15vh;
         z-index: 1;
         width: 100vw;
-        height: max-content;
+        height: 100vh;
         background-color: rgba(0, 0, 0, 0.884);
     }
 }
