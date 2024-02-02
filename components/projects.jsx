@@ -10,7 +10,7 @@ export default function Projects() {
                 <h1 className={Styles.titulo}>Projects</h1>
 
                 <div className={Styles.Projects}>
-                    <div className={Styles.card}>
+                    <div className={Styles.cardLeft}>
                         <div className={Styles.imagem}>
                             <Image
                                 src="/images/Projects/projeto1.png"
@@ -31,7 +31,15 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    <div className={Styles.card}>
+                    <div className={Styles.cardRight}>
+                        <div className={Styles.imagem}>
+                            <Image
+                                src="/images/Projects/projeto2.png"
+                                alt="Página suporte Raiztec"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
                         <div className={Styles.conteudoRight}>
                             <h2 className={Styles.tituloCard}>Landing page Suporte Raiztec</h2>
 
@@ -42,17 +50,9 @@ export default function Projects() {
                                     open_in_new
                                 </span></Link>
                         </div>
-                        <div className={Styles.imagem}>
-                            <Image
-                                src="/images/Projects/projeto2.png"
-                                alt="Página suporte Raiztec"
-                                width={400}
-                                height={400}
-                            />
-                        </div>
                     </div>
 
-                    <div className={Styles.card}>
+                    <div className={Styles.cardLeft}>
                         <div className={Styles.imagem}>
                             <Image
                                 src="/images/Projects/projeto3.png"
@@ -73,7 +73,15 @@ export default function Projects() {
                         </div>
                     </div>
 
-                    <div className={Styles.card}>
+                    <div className={Styles.cardRight}>
+                        <div className={Styles.imagem}>
+                            <Image
+                                src="/images/Projects/projeto4.png"
+                                alt="My List Plus"
+                                width={400}
+                                height={400}
+                            />
+                        </div>
                         <div className={Styles.conteudoRight}>
                             <h2 className={Styles.tituloCard}>My List Plus</h2>
 
@@ -84,14 +92,7 @@ export default function Projects() {
                                     open_in_new
                                 </span></Link>
                         </div>
-                        <div className={Styles.imagem}>
-                            <Image
-                                src="/images/Projects/projeto4.png"
-                                alt="My List Plus"
-                                width={400}
-                                height={400}
-                            />
-                        </div>
+
                     </div>
                 </div>
             </div>

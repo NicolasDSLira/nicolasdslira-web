@@ -25,7 +25,7 @@
     filter: drop-shadow(2px 2px 3px #adadad);
 }
 
-.Projects{
+.Projects {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -35,22 +35,31 @@
     height: auto;
 }
 
-.card{
+.cardLeft {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
+    height: 25vw;
+    margin: 1.5rem 0;
+}
 
+.cardRight {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    height: 25vw;
     margin: 1.5rem 0;
 }
 
 
-.imagem img{
+.imagem img {
     width: 100%;
     height: 100%;
 }
 
-.conteudoRight{
+.conteudoRight {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -58,7 +67,7 @@
     margin: 0 5rem;
 }
 
-.conteudoLeft{
+.conteudoLeft {
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -66,14 +75,14 @@
     margin: 0 5rem;
 }
 
-.tituloCard{
+.tituloCard {
     font-family: Kodchasan;
     font-size: 30pt;
     font-weight: 400;
     text-transform: capitalize;
 }
 
-.btn{
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,11 +94,102 @@
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
 
-.btn:hover{
+.btn:hover {
     box-shadow: inset 500px 0 0 0 #13117b;
     color: #FFF;
 }
 
-.icon{
+.icon {
     margin: 0 10px;
+}
+
+
+@media (max-width: 1250px) {
+    .Container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 100%;
+        height: auto;
+        padding: 0 0;
+        margin: 0 0;
+    }
+
+    .titulo {
+        font-family: Kodchasan;
+        font-size: 40pt;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        color: transparent;
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.50);
+        filter: drop-shadow(2px 2px 3px #adadad);
+        margin: 0 1rem;
+    }
+
+    .Projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .cardLeft,
+    .cardRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 2rem 0;
+    }
+
+    .conteudoRight,
+    .conteudoLeft {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin: 0 1rem;
+    }
+
+
+    .imagem img {
+        width: 80%;
+        height: auto;
+    }
+
+    .tituloCard {
+        font-family: Kodchasan;
+        font-size: 20pt;
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+
+    .btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: 400;
+        box-shadow: inset 20px 0 0 0 #6e18c3;
+        color: #FFF;
+        padding: 1rem 2rem;
+        transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        width: max-content;
+    }
+
+    .btn:hover {
+        box-shadow: inset 500px 0 0 0 #13117b;
+        color: #FFF;
+    }
+
+    .icon {
+        margin: 0 10px;
+    }
 }

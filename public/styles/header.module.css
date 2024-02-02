@@ -1,4 +1,4 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,10 +16,10 @@
     background-position: top;
 
     user-select: none;
-       
+
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     align-items: last baseline;
     justify-content: center;
@@ -27,7 +27,7 @@
     width: 50%;
 }
 
-.titulo{
+.titulo {
     color: #FFF;
     text-align: center;
     font-family: "Inconsolata", monospace;
@@ -39,11 +39,62 @@
     filter: drop-shadow(5px 5px 10px rgb(110, 24, 195));
 }
 
-.containerImagem{
+.containerImagem {
     margin-top: 25vh;
 }
 
-.containerImagem img{
+.containerImagem img {
     width: auto;
     height: 50vh;
+}
+
+@media (max-width: 1250px) {
+    .header {
+        display: flex;
+        justify-content: start ;
+        align-items: center;
+        flex-direction: column-reverse;
+    
+        padding: 0 10%;
+        margin: 0;
+    
+        width: 100vw;
+        max-width: 200vw;
+        height: 80vh;
+    
+        background: url('../images/bg-header.png') #141414 no-repeat;
+        background-size: 100vw 80vh;
+        background-position: top;
+    
+        user-select: none;
+    
+    }
+    
+    .conteudo {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .titulo {
+        color: #FFF;
+        text-align: center;
+        font-family: "Inconsolata", monospace;
+        font-size: 24pt;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+        filter: drop-shadow(5px 5px 10px rgb(110, 24, 195));
+    }
+    
+    .containerImagem {margin-top: 15vh;}
+    
+    .containerImagem img {
+        width: 150px;
+        height: auto;
+        border: 3px solid rgb(110, 24, 195);
+        border-radius: 20px;
+    }
 }

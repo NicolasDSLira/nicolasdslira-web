@@ -5,8 +5,7 @@
     justify-content: space-between;
     align-items: center;
 
-    top: 0; right: 0;
-    bottom: 1; left: 1;
+    top: 0; right: 0; bottom: 1; left: 1;
     position: absolute;
 
     width: 100vw;
@@ -20,6 +19,8 @@
     line-height: normal;
 }
 
+.MobileItem {display: none;}
+
 .logo {
     padding: 0;
     width: max-content;
@@ -29,6 +30,11 @@
 .logo img {
     width: 15vw;
     height: 15vh;
+}
+
+.Mobile {
+    display: none;
+    opacity: none;
 }
 
 .conteudo {
@@ -60,4 +66,90 @@
 
 .link:hover {
     background-size: 0 3px, 100% 3px;
+}
+
+
+
+@media (max-width: 1250px) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        top: 0;
+        right: 0;
+        bottom: 1;
+        left: 1;
+        position: absolute;
+
+        width: 100vw;
+        height: 15vh;
+        padding: 1rem 1rem;
+
+        font-family: "Jacques Francois";
+        font-size: 14pt;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .logo {
+        padding: 0;
+        width: 50%;
+        height: 100%;
+    }
+
+    .logo img {
+        width: auto;
+        height: 80%;
+    }
+
+    .MobileItem {
+        display: block;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .hamb {
+        display: block;
+        background-color: transparent;
+        border: 0;
+        width: 50px;
+        height: 50px;
+    }
+
+    .hammItem{
+        width: 40px;
+        height: 4px;
+        margin: 5px 5px;
+        transition-timing-function: ease;
+        transition-duration: .15s;
+        transition-property: transform;
+        border-radius: 4px;
+        background-color: rgb(110, 24, 195);
+    }
+
+    .conteudo {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        justify-content: start;
+
+        top: 0;
+        left: 0;
+
+        flex-direction: column;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        margin-top: 15vh;
+        z-index: 1;
+        width: 100vw;
+        height: max-content;
+        background-color: rgba(0, 0, 0, 0.884);
+    }
 }
