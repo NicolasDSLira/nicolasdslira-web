@@ -24,6 +24,7 @@ export default function Projects() {
 
                             <Link href="https://loja.raiztec.com.br" className={Styles.btn}>See the live website
                                 <span
+                                    translate="no"
                                     style={{ margin: '0 1rem' }}
                                     class="material-symbols-outlined" >
                                     open_in_new
@@ -45,6 +46,7 @@ export default function Projects() {
 
                             <Link href="https://raiztec.com.br/suporte-ADS/" className={Styles.btn}>See the live website
                                 <span
+                                    translate="no"
                                     style={{ margin: '0 1rem' }}
                                     class="material-symbols-outlined" >
                                     open_in_new
@@ -66,6 +68,7 @@ export default function Projects() {
 
                             <Link href="https://www.segsec.com.br/Servicos/" className={Styles.btn}>See the live website
                                 <span
+                                    translate="no"
                                     style={{ margin: '0 1rem' }}
                                     class="material-symbols-outlined" >
                                     open_in_new
@@ -87,6 +90,7 @@ export default function Projects() {
 
                             <Link href="https://nicolasdslira.github.io/MyListPlus/" className={Styles.btn}>See the live website
                                 <span
+                                    translate="no"
                                     style={{ margin: '0 1rem' }}
                                     class="material-symbols-outlined" >
                                     open_in_new
