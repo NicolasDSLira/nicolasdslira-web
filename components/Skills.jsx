@@ -4,7 +4,7 @@ export default function Skills() {
     return (
         <>
             <div className={Styles.Skills}>
-                <h1 translate="no">Skills</h1>
+                <h1>Skills</h1>
 
                 <div className={[Styles.fullstack]}>
                     <h2>full-stack developer</h2>
