@@ -1,101 +1,74 @@
-import Image from "next/image";
+import { LetterFx } from "./components/LetterFx";
+import Link from "next/link";
+import MatrixEffect from "./components/MatrixEffect";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <>
+      <div className="self-center flex flex-col gap-10 mx-20">
+        <div className="flex flex-col gap-2">
+          <h3>Hi all. I'm </h3>
+          <h1 className="text-6xl">
+            <LetterFx speed="medium" trigger="instant" charset={['0', '1']}>
+              Nicolas Lira
+            </LetterFx>
+            </h1>
+            <h2 className="text-[#4D5BCE] text-2xl">$ Full-stack developer</h2>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div>
+          <p className="text-[#607B96]">// See my main projects in website</p>
+          <p className="text-[#607B96]">// Or you can also see them on my Github</p>
+          <Link href={"https://github.com/NicolasDSLira"}><span className="text-[#4D5BCE]">const</span> <span className="text-[#43D9AD]">githubLink</span> = <span className="text-[#E99287]">“https://github.com/NicolasDSLira”</span></Link>
+        </div>
+
+      </div>
+
+      <div style={styles.container}>
+        <div style={styles.monitor}>
+          <div style={styles.screen}>
+            <MatrixEffect />
+          </div>
+          <div style={styles.stand}></div>
+        </div>
+      </div>
+
+    </>
+      
+
   );
 }
+
+const styles = {
+  container: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: '40%',
+    height: 'calc(100dvh-7rem)',
+  },
+  monitor: {
+    width: '70%', 
+    height: '50%', 
+    backgroundColor: '#000',
+    borderRadius: '20px',
+    position: 'relative',
+    boxShadow: '0 0 20px rgba(0, 0, 0, 0.5)',
+  },
+  screen: {
+    width: '95%',
+    height: '80%',
+    backgroundColor: '#111', 
+    margin: '2.5% auto 0',
+    borderRadius: '10px',
+    overflow: 'hidden', 
+  },
+  stand: {
+    width: '10%',
+    height: '10%',
+    backgroundColor: '#666',
+    position: 'absolute',
+    bottom: '-10%',
+    left: '45%',
+    borderRadius: '5px',
+  },
+};
