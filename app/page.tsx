@@ -1,7 +1,7 @@
 import { LetterFx } from "./components/LetterFx";
 import Link from "next/link";
 import MatrixEffect from "./components/MatrixEffect";
-
+import styles from "@/app/styles.module.css"
 
 
 export default function Home() {
@@ -26,12 +26,12 @@ export default function Home() {
 
       </div>
 
-      <div className="container">
-        <div className="monitor">
-          <div className="screen">
+      <div className={'flex items-center justify-center w-2/4'}>
+        <div className={styles.monitor}>
+          <div className={styles.screen}>
             <MatrixEffect />
           </div>
-          <div className="stand"></div>
+          <div className={styles.stand}></div>
         </div>
       </div>
 
