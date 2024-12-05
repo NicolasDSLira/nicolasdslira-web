@@ -15,8 +15,6 @@ body {
   font-family: "Fira Code", monospace;
 }
 
-
-
 *::-webkit-scrollbar{
   width: .5rem;
 }

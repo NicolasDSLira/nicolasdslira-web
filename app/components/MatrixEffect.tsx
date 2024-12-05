@@ -1,6 +1,7 @@
 // app/components/MatrixEffect.tsx
 "use client";
 
+import { relative } from 'path';
 import { useEffect, useRef } from 'react';
 
 const MatrixEffect: React.FC = () => {
@@ -72,7 +73,7 @@ const MatrixEffect: React.FC = () => {
     };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ display: 'block', width: '100%', height: '100%' }} />;
+  return <canvas ref={canvasRef} style={{ display: 'block', width: '100%', height: '100%'}} />;
 };
 
 export default MatrixEffect;

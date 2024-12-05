@@ -18,7 +18,7 @@ export default function Footer(){
                     <Image src={'/linkedin.svg'} width={25} height={25} alt="Linkedin"></Image>
                 </Link>
             </div>
-            <div id="github" className="flex-none flex items-center gap-4 px-4">
+            <div id="github" className="flex-none md:flex items-center gap-4 px-4 hidden">
                 @NicolasDSLira 
                 <Image src={'/github.svg'} width={25} height={25} alt="Github"></Image>
             </div>
